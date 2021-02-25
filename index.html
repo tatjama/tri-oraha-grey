@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style/style.css"/> 
+    <title>Tri Oraha | Vinarija</title>
+</head>
+<body>
+    <section class="showcase"> 
+        <header>
+            <h2 class="logo">
+                <img src="./images/logo-tri-oraha-img.png" alt="logo tri oraha"/>
+                <img class="logo-name" src="./images/logo-tri-oraha-naziv.png" alt="naziv logo"/>
+            </h2>
+            
+            <div class="toggle ">
+
+            </div>
+        </header>
+        <!--<video src="./videos/casa.mp4" autoPlay loop muted></video>-->
+        <!--IOS video media-->
+        <video autoplay loop muted playsinline class="video-background ">
+            <source src="videos/casa.mp4" type="video/mp4">
+          </video>
+          <!--IOS video media-->
+        <div class="overlay">
+            
+        </div>
+        <!--Start Clean version-->
+       <!--<div class="text">
+            <h3>Vino bez </h3>
+            <h3> <span>kompromisa</span> </h3>
+            <h3>Za ljude bez</h3>
+            <h3><span>kompromisa</span> </h3>
+            <p> Kada najbolje bordoške sorte rastu na suncu, vetru i tlu Negotinske krajine.
+            <br> Kada svaka berba provede najmanje pet godina u uvek novim Barrique buradima i bar još jednu godinu u flaši.</br>
+             Tako nastaju  <span> tri oraha, </span></br> vina bez kompromisa.</p>
+            <a href="./pages/home.html" >Explore</a>
+        </div>-->
+        <!--End Clean version-->
+        <!--Start Cursive version-->
+       <div class="text">
+            <h3>Vino bez <span> kompromisa</span> </h3>
+            <h3>Za ljude bez <span> kompromisa</span> </h3>
+            <p> Kada najbolje bordoške sorte rastu na suncu, vetru i tlu Negotinske krajine.
+            <br> Kada svaka berba provede najmanje pet godina u uvek novim Barrique buradima i bar još jednu godinu u flaši.</br>
+             Tako nastaju  <span> tri oraha, </span></br> vina bez kompromisa.</p>
+            <a href="./pages/home.html">istražite</a>
+        </div>
+        <!--End Cursive version-->
+        <div class="copyright">
+            <a href="https://my-react-portfolio.tatjana.vercel.app/" target="_blank">&#169 Copyright & Web development: <span>TM</span></a>
+        </div>
+        <ul class="social">
+            <li><a href="https://twitter.com/trioraha" target="_blank"><img src="./images/008-twitter.png" alt="twitter"/></a></li>
+            <li><a href="https://www.facebook.com/VinarijaTriOraha" target="_blank"><img src="./images/facebook-1.png" alt="facebook"/></a></li>
+            <li><a href="https://www.instagram.com/tri_oraha/" target="_blank"><img src="./images/instagram-2.png" alt="instagram"/></a></li>
+            <li><a href="https://www.linkedin.com/in/tri-oraha-bb9849158/" target="_blank"><img src="./images/linkedin-1.png" alt="linkedin"/></a></li>
+        </ul>
+        
+        
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a style="border-bottom: 2px solid goldenrod;" href="#">Intro</a></li>
+            <li><a href="./pages/home.html">Home</a></li>
+            <li><a href="./pages/vinarija.html">Vinarija</a></li>
+            <li><a href="./pages/vinograd.html">Vinograd</a></li>
+            <li><a href="#">Vina</a></li>
+            <li><a href="#">Tri oraha u medijima</a></li>
+            <li><a href="#">Galerija</a></li>
+            <li><a href="#">O nama</a></li>
+            <li><a href="#">Kontakt</a></li>
+        </ul>
+    </div>
+    <script type="text/javascript">
+    const showcase = document.querySelector('.showcase');
+    const toggle = document.querySelector('.toggle');
+    toggle.addEventListener('click', () => {
+        toggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+    })
+    /*function closeVideo(){
+        alert("Clicket")
+        showcase.style.display ="none";
+    }*/
+    </script>
+</body>
+</html>
