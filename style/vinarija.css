@@ -1,0 +1,119 @@
+/*Content*/
+
+/*Start article*/
+.article{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    padding: 100px;
+}
+.article--full-size{
+    background-image: url("../images/vinarija-natpis.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+  
+}
+.article-item{
+    width: 33%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.article-image_image{
+    width: 100%;
+}
+.article-text{
+    text-align:right;
+}
+.article-text_h3{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+.article-text_h3 span{
+    color: goldenrod;
+    font-size: 3.5rem;
+    /*color: rgb(85, 3, 3);*/
+}
+.article-text_h4{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    line-height:1em;
+}
+.article-text_p{
+    font-size: 1.1em;
+    font-weight: 400px;
+    margin: 20px 0px;
+    max-width: 700px;
+    padding-right: 10px;
+}
+.article-text_p span{
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing:3px;
+}
+.article-text_a{
+    padding: 10px 30px;
+    display: inline-block;
+    background-color: goldenrod;
+    border: 2px solid goldenrod;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    color: white;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -ms-transition: 0.2s;
+    -o-transition: 0.2s;
+}
+.article-text_a:hover{
+    letter-spacing: 6px;
+}
+
+/*End article*/
+/*RESPONSIVE*/
+@media screen and (max-width:768px){
+    /*Content*/
+    /*Start article*/
+    .article{
+        flex-direction: column;
+        padding: 40px;
+        justify-content:space-around;
+    }
+    .article--full-size{
+        background-size: contain;
+    }
+    .article-item{
+        width: 100%;
+    }
+    .article-text{
+        text-align: left;
+        color:#363636;
+    }
+    .article-text_p{
+        font-size:0.9rem;
+    }
+    .article-text_h3{
+        font-size: 1.5em;
+    }
+    .article-text_h3 span{
+        font-size: 2rem;
+    }
+    .article-text_h4{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        line-height:1em;
+    }
+    .article-text_a{
+        padding: 9px 18px;
+        font-size:12px;
+    }
+    /*End article*/
+}
